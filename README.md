@@ -1,1 +1,1 @@
-# zmk-config-ArroundFortyRB
+# zmk-config-AroundFortyRB
