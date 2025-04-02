@@ -1,5 +1,0 @@
-config SHIELD_MOGA_R
-    def_bool $(shields_list_contains,ArroundForty-RB_R)
-
-config SHIELD_MOGA_L
-    def_bool $(shields_list_contains,ArroundForty-RB_L)
