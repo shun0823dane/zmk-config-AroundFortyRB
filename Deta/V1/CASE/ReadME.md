@@ -1,1 +1,1 @@
-
+Around Forty RBのケースデータになります。
