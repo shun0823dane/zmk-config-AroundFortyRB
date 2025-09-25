@@ -1,3 +1,5 @@
 # zmk-config-AroundFortyRB
 
-Around Forty RightBallのファームウェア
+Around Forty RightBallのファームウェアです。
+
+AMLはOFFになっています。
