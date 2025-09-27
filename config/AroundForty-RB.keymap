@@ -6,6 +6,8 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 6
 
+#include <behaviors/rgbled_widget.dtsi>  // needed to use the behaviors
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
@@ -40,7 +42,6 @@
 
             tap-ms = <20>;
         };
-        #include <behaviors/rgbled_widget.dtsi>  // needed to use the behaviors
     };
 
 
