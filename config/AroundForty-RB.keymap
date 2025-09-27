@@ -40,9 +40,9 @@
 
             tap-ms = <20>;
         };
+        #include <behaviors/rgbled_widget.dtsi>  // needed to use the behaviors
     };
 
-#include <behaviors/rgbled_widget.dtsi>  // needed to use the behaviors
 
     keymap {
         compatible = "zmk,keymap";
