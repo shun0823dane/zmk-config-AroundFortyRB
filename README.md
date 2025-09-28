@@ -12,5 +12,6 @@ AMLはOFFになっています。
 
 ※私がMacで使っているものになります
 
+<img width="788" height="2016" alt="my_keymap" src="https://github.com/user-attachments/assets/ed5b850f-864c-4957-8a14-7d84ca0427a0" />
 
-<img width="788" height="2016" alt="my_keymap" src="https://github.com/user-attachments/assets/f5409d5e-fe90-44dc-b67b-fd77aa4a1adf" />
+
