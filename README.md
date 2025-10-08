@@ -9,7 +9,5 @@ AMLはOFFになっています。
 
 
 10月以降に購入いただいた場合のKeymapは以下のようになっています
-
-※私がMacで使っているものになります
-
-<img width="788" height="2576" alt="AroundForty RB_keymap" src="https://github.com/user-attachments/assets/fc0b1504-909a-42f8-ae46-6b6fd107f4bf" />
+//
+<img width="788" height="2576" alt="AroundForty RB_keymap2510" src="https://github.com/user-attachments/assets/c434a08d-f976-488d-8108-1fbb13a93678" />
