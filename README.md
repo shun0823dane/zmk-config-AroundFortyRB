@@ -12,4 +12,4 @@ AMLはOFFになっています。
 
 ※私がMacで使っているものになります
 
-<img width="788" height="2296" alt="my_keymap (2)" src="https://github.com/user-attachments/assets/c566f84d-b5fc-4ebf-aeb7-aeefe45549f0" />
+<img width="788" height="2576" alt="AroundForty RB_keymap" src="https://github.com/user-attachments/assets/fc0b1504-909a-42f8-ae46-6b6fd107f4bf" />
