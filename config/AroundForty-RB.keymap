@@ -49,27 +49,27 @@
         Mac-Default_Layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                      &kp T                           &kp Y             &kp U        &kp I      &kp O       &kp P
-&kp A             &kp S         &kp D         &kp F                      &kp G                           &kp H             &kp J        &kp K      &kp L       &kp MINUS
+&kp A             &kp S         &kp D         &kp F                      &kp G                           &kp H             &kp J        &lt 6 K    &kp L       &kp MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                      &kp B     &kp LG(LS(NUMBER_4))  &kp N             &kp M        &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI  &mt LEFT_SHIFT LANGUAGE_2  &mkp MB1  &kp SPACE             &lt 4 LANGUAGE_1  &kp AT_SIGN  &kp ENTER  &lt 7 HASH  &kp DELETE
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI  &mt LEFT_SHIFT LANGUAGE_2  &mkp MB1  &kp SPACE             &lt 1 LANGUAGE_1  &kp AT_SIGN  &kp ENTER  &lt 7 HASH  &kp DELETE
             >;
         };
 
-        Win-Default_Layer {
+        Number_Layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                      &kp T                          &kp Y        &kp U        &kp I          &kp O       &kp P
-&kp A             &kp S         &kp D         &kp F                      &kp G                          &kp H        &kp J        &kp K          &kp L       &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                      &kp B        &kp LG(LS(S))     &kp N        &kp M        &kp COMMA      &kp PERIOD  &kp SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI  &mt LEFT_SHIFT LANGUAGE_1  &lt 3 SPACE  &lt 6 LANGUAGE_2  &lt 5 ENTER  &kp AT_SIGN  &kp BACKSPACE  &lt 7 HASH  &kp DELETE
+&kp LS(STAR)   &kp PLUS      &kp N7  &kp N8   &kp N9                       &kp LS(EXCL)   &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(LBRC)  &kp BSLH
+&kp LS(COLON)  &kp EQUAL     &kp N4  &kp N5   &kp N6                       &kp LS(QMARK)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(DLLR)  &kp LS(AMPS)
+&kp FSLH       &kp MINUS     &kp N1  &kp N2   &kp N3     &kp LSHFT         &kp N          &kp M         &kp COMMA     &kp PERIOD    &kp SLASH
+&kp LCTRL      &kp LEFT_ALT  &kp N0  &kp DOT  &kp COMMA  &lt 6 LANGUAGE_2  &kp FSLH       &kp SQT       &kp SEMI      &kp LS(AMPS)  &kp LEFT
             >;
         };
 
-        Mac-Function_Layer {
+        Control_Layer {
             bindings = <
-&kp LG(A)  &kp LG(X)     &kp LG(C)    &kp LG(V)  &kp LG(F)          &kp LESS_THAN         &kp GREATER_THAN       &kp CARET        &kp PERCENT    &kp DOLLAR
-&kp TAB    &kp LEFT_GUI  &kp LS(TAB)  &mkp MB1   &mkp MB2           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN      &kp AMPERSAND  &kp DOUBLE_QUOTES
-&trans     &trans        &trans       &trans     &mkp MB3   &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &kp QUESTION   &kp SQT
-&trans     &trans        &trans       &trans     &trans     &trans  &kp ENTER             &kp COLON              &kp BACKSPACE    &kp BACKSLASH  &kp HASH
+&kp F      &kp LCTRL     &kp LS(LG(N7))  &kp LS(LG(N8))  &kp LS(LG(N9))             &kp LESS_THAN     &kp GREATER_THAN  &kp CARET      &kp UP         &kp DOLLAR
+&kp TAB    &kp LEFT_GUI  &kp DEL         &kp N5          &kp DEL                    &kp L             &kp SPACE         &kp LEFT       &kp DOWN       &kp RIGHT
+&kp RIGHT  &kp RIGHT     &trans          &trans          &mkp MB3        &kp LC(A)  &kp LEFT_BRACKET  &kp A             &kp LG(A)      &kp DOWN       &kp RIGHT
+&trans     &trans        &trans          &trans          &trans          &trans     &kp ENTER         &kp LC(E)         &kp BACKSPACE  &kp BACKSLASH  &kp HASH
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -108,12 +108,12 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        Num_Layer {
+        Scroll_Layer {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5           &kp PLUS      &kp MINUS   &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10          &kp EQUAL     &kp COLON   &kp N4         &kp N5         &kp N6
-&kp F11  &kp F12  &trans  &trans  &trans   &trans  &kp ASTERISK  &kp SLASH   &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3
-&trans   &trans   &trans  &trans  &trans   &trans  &kp ENTER     &kp DOLLAR  &kp BACKSPACE  &kp AMPERSAND  &kp N0
+&kp LC(LA(E))    &kp LG(LEFT)   &kp LG(LA(N7))        &kp LA(LG(N8))  &kp LA(LG(NUMBER_9))                        &trans         &trans        &trans         &kp LG(MINUS)  &kp LG(EQUAL)
+&kp LC(LA(RET))  &kp LG(N)      &kp LG(LA(N4))        &kp LA(LG(N5))  &kp LG(LA(N6))                              &kp BACKSPACE  &kp LCTRL     &trans         &trans         &trans
+&kp LC(LA(T))    &kp LG(RIGHT)  &kp LA(LG(NUMBER_1))  &kp LG(LA(N2))  &kp LG(LA(N3))        &trans                &trans         &kp LG(LBKT)  &trans         &kp LG(RBKT)   &trans
+&kp LC(LA(L))    &kp LA(LC(M))  &kp LA(LC(R))         &trans          &trans                &kp LS(LG(NUMBER_4))  &kp SPACE      &trans        &kp BACKSPACE  &kp LC(LEFT)   &kp LC(RIGHT)
             >;
         };
 
@@ -130,10 +130,10 @@
 
         AutoMouse_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans            &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &mkp MB1  &trans  &trans  &trans    &trans    &trans    &trans
+&kp LG(LA(SPACE))  &kp LG(W)      &kp LG(SPACE)  &kp LG(R)      &kp LG(T)              &kp LESS_THAN  &kp GREATER_THAN  &trans     &kp LC(KP_MINUS)  &kp LC(KP_PLUS)
+&kp LG(A)          &kp LG(S)      &kp DELETE     &kp LG(F)      &kp LS(LG(T))          &kp LG(N)      &mkp MB1          &mkp MB3   &mkp MB2          &trans
+&kp LG(Z)          &kp LG(LA(V))  &kp LA(LG(C))  &kp LS(LG(V))  &trans         &trans  &kp LG(A)      &kp LG(C)         &kp LG(V)  &kp LC(LEFT)      &kp LC(RIGHT)
+&trans             &trans         &trans         &trans         &mkp MB1       &trans  &trans         &trans            &trans     &kp LC(UP)        &kp LC(UP)
             >;
         };
     };
