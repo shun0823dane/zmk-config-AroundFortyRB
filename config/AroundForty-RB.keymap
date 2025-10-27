@@ -130,10 +130,10 @@
 
         AutoMouse_Layer {
             bindings = <
-&kp LG(LA(SPACE))  &kp LG(W)      &kp LG(SPACE)  &kp LG(R)      &kp LG(T)              &kp LESS_THAN  &kp GREATER_THAN  &trans     &kp LC(KP_MINUS)  &kp LC(KP_PLUS)
-&kp LG(A)          &kp LG(S)      &kp DELETE     &kp LG(F)      &kp LS(LG(T))          &kp LG(N)      &mkp MB1          &mkp MB3   &mkp MB2          &kp LC(UP_ARROW)
-&kp LG(Z)          &kp LG(LA(V))  &kp LA(LG(C))  &kp LS(LG(V))  &trans         &trans  &kp LG(A)      &kp LG(C)         &kp LG(V)  &kp LC(LEFT)      &kp LC(RIGHT)
-&trans             &trans         &trans         &trans         &mkp MB1       &trans  &trans         &trans            &trans     &kp LEFT          &kp RIGHT
+&kp LG(LA(SPACE))  &kp LG(W)      &kp LG(SPACE)  &kp LG(R)      &kp LG(T)              &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSPACE  &kp LC(KP_MINUS)  &kp LC(KP_PLUS)
+&kp LG(A)          &kp LG(S)      &kp DELETE     &kp LG(F)      &kp LS(LG(T))          &kp LG(N)      &mkp MB1          &mkp MB3       &mkp MB2          &kp LC(UP_ARROW)
+&kp LG(Z)          &kp LG(LA(V))  &kp LA(LG(C))  &kp LS(LG(V))  &trans         &trans  &kp LG(A)      &kp LG(C)         &kp LG(V)      &kp LC(LEFT)      &kp LC(RIGHT)
+&trans             &trans         &trans         &trans         &mkp MB1       &trans  &trans         &kp DELETE        &trans         &kp LEFT          &kp RIGHT
             >;
         };
     };
