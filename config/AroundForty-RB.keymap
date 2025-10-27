@@ -49,9 +49,9 @@
         Mac-Default_Layer {
             bindings = <
 &kp Q             &kp W                  &kp E                       &kp R                      &kp T                &kp Y             &kp U          &kp I      &kp O            &kp P
-&kp A             &kp S                  &kp D                       &kp F                      &kp G                &kp H             &kp J          &lt 6 K    &kp L            &kp MINUS
+&kp A             &kp S                  &kp D                       &kp F                      &kp G                &kp H             &kp J          &lt 8 K    &kp L            &kp MINUS
 &mt LEFT_SHIFT Z  &kp X                  &kp C                       &kp V                      &kp B     &kp TAB    &kp N             &kp M          &kp COMMA  &kp PERIOD       &kp SLASH
-&mt LCTRL ESCAPE  &mt LEFT_ALT CAPSLOCK  &mt LEFT_GUI LS(BACKSPACE)  &mt LEFT_SHIFT LANGUAGE_2  &mkp MB1  &kp SPACE  &lt 1 LANGUAGE_1  &kp LS(ENTER)  &kp ENTER  &lt 7 LG(ENTER)  &kp COLON
+&mt LCTRL ESCAPE  &mt LEFT_ALT CAPSLOCK  &mt LEFT_GUI LS(BACKSPACE)  &mt LEFT_SHIFT LANGUAGE_2  &mkp MB1  &kp SPACE  &lt 1 LANGUAGE_1  &kp LS(ENTER)  &kp ENTER  &lt 0 LG(ENTER)  &kp COLON
             >;
         };
 
@@ -60,7 +60,7 @@
 &kp LS(STAR)   &kp PLUS      &kp N7  &kp N8   &kp N9                       &kp LS(EXCL)   &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(LBRC)  &kp BSLH
 &kp LS(COLON)  &kp EQUAL     &kp N4  &kp N5   &kp N6                       &kp LS(QMARK)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(DLLR)  &kp LS(AMPS)
 &kp FSLH       &kp MINUS     &kp N1  &kp N2   &kp N3     &kp LSHFT         &kp N          &kp M         &kp COMMA     &kp PERIOD    &kp SLASH
-&kp LCTRL      &kp LEFT_ALT  &kp N0  &kp DOT  &kp COMMA  &lt 6 LANGUAGE_2  &kp FSLH       &kp SQT       &kp SEMI      &kp LS(AMPS)  &kp LEFT
+&kp LCTRL      &kp LEFT_ALT  &kp N0  &kp DOT  &kp COMMA  &lt 7 LANGUAGE_2  &kp FSLH       &kp SQT       &kp SEMI      &kp LS(AMPS)  &kp LEFT
             >;
         };
 
@@ -108,12 +108,12 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        Scroll_Layer {
+        AutoMouse_Layer {
             bindings = <
-&kp LC(LA(E))    &kp LG(LEFT)   &kp LG(LA(N7))        &kp LA(LG(N8))  &kp LA(LG(NUMBER_9))                        &trans         &trans        &trans         &kp LG(MINUS)  &kp LG(EQUAL)
-&kp LC(LA(RET))  &kp LG(N)      &kp LG(LA(N4))        &kp LA(LG(N5))  &kp LG(LA(N6))                              &kp BACKSPACE  &kp LCTRL     &mo 6          &trans         &trans
-&kp LC(LA(T))    &kp LG(RIGHT)  &kp LA(LG(NUMBER_1))  &kp LG(LA(N2))  &kp LG(LA(N3))        &trans                &trans         &kp LG(LBKT)  &trans         &kp LG(RBKT)   &trans
-&kp LC(LA(L))    &kp LA(LC(M))  &kp LA(LC(R))         &trans          &trans                &kp LS(LG(NUMBER_4))  &kp SPACE      &trans        &kp BACKSPACE  &kp LC(LEFT)   &kp LC(RIGHT)
+&kp LG(LA(SPACE))  &kp LG(W)      &kp LG(SPACE)  &kp LG(R)      &kp LG(T)              &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSPACE  &kp LC(KP_MINUS)  &kp LC(KP_PLUS)
+&kp LG(A)          &kp LG(S)      &kp DELETE     &kp LG(F)      &kp LS(LG(T))          &kp LG(N)      &mkp MB1          &mo 8          &mkp MB2          &kp LC(UP_ARROW)
+&kp LG(Z)          &kp LG(LA(V))  &kp LA(LG(C))  &kp LS(LG(V))  &trans         &trans  &kp LG(A)      &kp LG(C)         &kp LG(V)      &kp LC(LEFT)      &kp LC(RIGHT)
+&trans             &trans         &trans         &trans         &mkp MB1       &trans  &trans         &kp DELETE        &trans         &kp LEFT          &kp RIGHT
             >;
         };
 
@@ -128,12 +128,12 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        AutoMouse_Layer {
+        Scroll_Layer {
             bindings = <
-&kp LG(LA(SPACE))  &kp LG(W)      &kp LG(SPACE)  &kp LG(R)      &kp LG(T)              &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSPACE  &kp LC(KP_MINUS)  &kp LC(KP_PLUS)
-&kp LG(A)          &kp LG(S)      &kp DELETE     &kp LG(F)      &kp LS(LG(T))          &kp LG(N)      &mkp MB1          &mo 6          &mkp MB2          &kp LC(UP_ARROW)
-&kp LG(Z)          &kp LG(LA(V))  &kp LA(LG(C))  &kp LS(LG(V))  &trans         &trans  &kp LG(A)      &kp LG(C)         &kp LG(V)      &kp LC(LEFT)      &kp LC(RIGHT)
-&trans             &trans         &trans         &trans         &mkp MB1       &trans  &trans         &kp DELETE        &trans         &kp LEFT          &kp RIGHT
+&kp LC(LA(E))    &kp LG(LEFT)   &kp LG(LA(N7))        &kp LA(LG(N8))  &kp LA(LG(NUMBER_9))                        &trans         &trans        &trans         &kp LG(MINUS)  &kp LG(EQUAL)
+&kp LC(LA(RET))  &kp LG(N)      &kp LG(LA(N4))        &kp LA(LG(N5))  &kp LG(LA(N6))                              &kp BACKSPACE  &kp LCTRL     &trans         &trans         &trans
+&kp LC(LA(T))    &kp LG(RIGHT)  &kp LA(LG(NUMBER_1))  &kp LG(LA(N2))  &kp LG(LA(N3))        &trans                &trans         &kp LG(LBKT)  &trans         &kp LG(RBKT)   &trans
+&kp LC(LA(L))    &kp LA(LC(M))  &kp LA(LC(R))         &trans          &trans                &kp LS(LG(NUMBER_4))  &kp SPACE      &trans        &kp BACKSPACE  &kp LC(LEFT)   &kp LC(RIGHT)
             >;
         };
     };
