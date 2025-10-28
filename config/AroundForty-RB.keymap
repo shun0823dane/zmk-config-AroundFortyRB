@@ -2,11 +2,11 @@
 #define MOUSE 6
 
 #include <behaviors/rgbled_widget.dtsi>  // needed to use the behaviors
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/mouse.h>
 
 &mt {
     flavor = "balanced";
@@ -49,10 +49,10 @@
 
         Mac-Default_Layer {
             bindings = <
-&kp Q             &kp W             &kp E             &kp R                      &kp T                    &kp Y             &kp U          &kp I        &kp O            &kp P
-&kp A             &kp S             &kp D             &kp F                      &kp G                    &kp H             &kp J          &lt 8 K      &kp L            &kp MINUS
-&mt LEFT_SHIFT Z  &kp X             &kp C             &kp V                      &kp B     &kp BACKSPACE  &kp N             &kp M          &kp COMMA    &kp PERIOD       &kp SLASH
-&mt LCTRL ESCAPE  &mt LEFT_ALT MB2  &mt LEFT_GUI TAB  &mt LEFT_SHIFT LANGUAGE_2  &mkp MB1  &kp SPACE      &lt 1 LANGUAGE_1  &kp LS(ENTER)  &lt 2 ENTER  &lt 7 LG(ENTER)  &kp COLON
+&kp Q             &kp W             &kp E      &kp R                        &kp T                           &kp Y             &kp U      &kp I        &kp O            &kp P
+&kp A             &kp S             &kp D      &kp F                        &kp G                           &kp H             &kp J      &lt 8 K      &kp L            &kp BACKSPACE
+&mt LEFT_SHIFT Z  &kp X             &kp C      &kp V                        &kp B     &kp LS(ENTER)         &kp N             &kp M      &kp COMMA    &kp PERIOD       &kp MINUS
+&mt LCTRL ESCAPE  &mt LEFT_ALT MB2  &lt 2 TAB  &mt LG(LEFT_GUI) LANGUAGE_2  &mkp MB1  &mt LEFT_SHIFT SPACE  &lt 1 LANGUAGE_1  &kp SLASH  &lt 2 ENTER  &lt 7 LG(ENTER)  &kp COLON
             >;
         };
 
