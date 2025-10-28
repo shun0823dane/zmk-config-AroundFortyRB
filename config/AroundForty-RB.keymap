@@ -67,7 +67,7 @@
         Control_Layer {
             bindings = <
 &kp F      &kp LCTRL     &kp LS(LG(N7))  &kp LS(LG(N8))  &kp LS(LG(N9))             &kp LESS_THAN     &kp GREATER_THAN  &kp CARET      &kp UP         &kp DOLLAR
-&kp TAB    &kp LEFT_GUI  &kp DEL         &kp N5          &kp DEL                    &kp L             &kp SPACE         &kp LEFT       &kp DOWN       &kp RIGHT
+&kp TAB    &kp LEFT_GUI  &kp DEL         &kp N5          &kp DEL                    &kp BACKSPACE     &kp SPACE         &kp LEFT       &kp DOWN       &kp RIGHT
 &kp RIGHT  &kp RIGHT     &trans          &trans          &mkp MB3        &kp LC(A)  &kp LEFT_BRACKET  &kp A             &kp LG(A)      &kp DOWN       &kp RIGHT
 &trans     &trans        &trans          &trans          &trans          &trans     &kp ENTER         &kp LC(E)         &kp BACKSPACE  &kp BACKSLASH  &kp HASH
             >;
