@@ -24,18 +24,18 @@
             label = "TO_LAYER_0";
         };
 
-        pass: new_macro {
+        pass: pass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(A) &kp S &kp H &kp U &kp C &kp K &kp N1 &kp O &kp M &kp N2 &kp RET>;
-            label = "NEW_MACRO";
+            label = "PASS";
         };
 
-        brackets_KAGI: new_macro {
+        brackets_KAGI: brackets_KAGI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LANGUAGE_1 &kp LBRC &kp RBRC &kp LEFT>;
-            label = "NEW_MACRO";
+            label = "BRACKETS_KAGI";
         };
 
         brackets_contain: brackets_contain {
