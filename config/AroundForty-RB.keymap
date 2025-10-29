@@ -34,7 +34,7 @@
         symbol_backets_KAGI: brackets_KAGI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &kp LBRC &kp RBRC &kp LEFT>;
+            bindings = <&kp LANGUAGE_1 &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp ENTER &kp LEFT>;
             label = "BRACKETS_KAGI";
         };
 
@@ -48,7 +48,7 @@
         symbol_brackets_ZENKAKU: brackets_ZENKAKU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &kp LPAR &kp RPAR &kp LEFT>;
+            bindings = <&kp LANGUAGE_1 &kp LPAR &kp RPAR &kp ENTER &kp LEFT>;
             label = "BRACKETS_ZENKAKU";
         };
 
@@ -114,10 +114,10 @@
 
         Number_Layer {
             bindings = <
-&kp LS(STAR)   &kp PLUS   &kp N7  &kp N8   &kp N9                &kp LS(EXCL)   &symbol_brackets_hankaku  &symbol_brackets_contain  &kp LS(LBRC)  &kp BSLH
-&kp LS(COLON)  &kp EQUAL  &kp N4  &kp N5   &kp N6                &kp LS(QMARK)  &symbol_brackets_ZENKAKU  &symbol_backets_KAGI      &kp LS(DLLR)  &kp BACKSPACE
-&kp FSLH       &kp MINUS  &kp N1  &kp N2   &kp N3     &kp BSPC   &kp N          &kp M                     &kp COMMA                 &kp PERIOD    &kp SLASH
-&kp LS(TAB)    &kp TAB    &kp N0  &kp DOT  &kp COMMA  &kp RSHFT  &kp FSLH       &kp SQT                   &kp SEMI                  &kp LS(AMPS)  &kp LEFT
+&kp LS(STAR)   &kp PLUS   &kp N7  &kp N8   &kp N9                &kp LS(EXCL)       &symbol_brackets_hankaku  &symbol_brackets_contain  &kp LS(LBRC)  &kp BSLH
+&kp LS(COLON)  &kp EQUAL  &kp N4  &kp N5   &kp N6                &kp LS(QMARK)      &symbol_brackets_ZENKAKU  &symbol_backets_KAGI      &kp LS(DLLR)  &kp BACKSPACE
+&kp FSLH       &kp MINUS  &kp N1  &kp N2   &kp N3     &kp BSPC   &kp DOUBLE_QUOTES  &kp SLASH                 &kp COMMA                 &kp PERIOD    &kp SLASH
+&kp LS(TAB)    &kp TAB    &kp N0  &kp DOT  &kp COMMA  &kp RSHFT  &kp FSLH           &kp SQT                   &kp SEMI                  &kp LS(AMPS)  &kp LEFT
             >;
         };
 
