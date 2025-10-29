@@ -69,8 +69,15 @@
         symbol_NAKAGURO: symbol_NAKAGURO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp FSLH &kp>;
+            bindings = <&kp LANG1 &kp FSLH>;
             label = "SYMBOL_NAKAGURO";
+        };
+
+        symbol_DoubleQuation: symbol_DoubleQuation {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &kp DQT &kp DQT &kp LEFT>;
+            label = "SYMBOL_DOUBLEQUATION";
         };
     };
 
