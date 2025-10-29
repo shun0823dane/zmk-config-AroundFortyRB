@@ -58,6 +58,13 @@
             bindings = <&kp LANG2 &kp LPAR &kp RPAR &kp LEFT>;
             label = "BRACKETS_HANKAKU";
         };
+
+        browser_DupPage: browser_DupPage {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(L) &kp LG(ENTER)>;
+            label = "BROWSER_DUPPAGE";
+        };
     };
 
     behaviors {
