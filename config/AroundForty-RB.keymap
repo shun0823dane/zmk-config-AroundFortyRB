@@ -79,6 +79,13 @@
             bindings = <&kp LANG2 &kp SLASH &kp ENTER>;
             label = "SYMBOL_NAKAGURO";
         };
+
+        symbol_colon: symbol_colong {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &kp COLON &kp ENTER>;
+            label = "SYMBOL_COLONG";
+        };
     };
 
     behaviors {
