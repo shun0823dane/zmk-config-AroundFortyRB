@@ -177,7 +177,7 @@
 &kp LG(LA(SPACE))  &kp LG(W)      &kp LG(SPACE)  &kp LG(R)      &kp LG(T)              &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSPACE  &kp LG(MINUS)  &kp LG(EQUAL)
 &kp LG(A)          &lt 2 LG(S)    &kp DELETE     &kp LG(F)      &kp LS(LG(T))          &kp LG(N)      &mkp MB1          &mo 8          &mkp MB2       &kp BACKSPACE
 &kp LG(Z)          &kp LG(LA(V))  &kp LA(LG(C))  &kp LS(LG(V))  &trans         &trans  &kp LG(A)      &kp LG(C)         &kp LG(V)      &kp LC(LEFT)   &kp LC(RIGHT)
-&trans             &trans         &trans         &mo 2          &mkp MB1       &trans  &mo 1          &kp DELETE        &mo 2          &kp RG(ENTER)  &kp LC(UP)
+&trans             &trans         &trans         &lt 2 LANG2    &mkp MB1       &trans  &lt 1 LANG1    &kp DELETE        &lt 2 ENTER    &kp RG(ENTER)  &kp LC(UP)
             >;
         };
 
