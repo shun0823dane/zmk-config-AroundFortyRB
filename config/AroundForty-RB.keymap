@@ -130,10 +130,10 @@
 
         Control_Layer {
             bindings = <
-&kp ESCAPE  &trans      &kp LS(LG(N7))  &kp LS(LG(N8))  &kp LS(LG(N9))             &kp LESS_THAN   &kp GREATER_THAN  &kp UP            &kp UP             &trans
-&kp TAB     &kp LG(N4)  &kp DEL         &kp LG(N5)      &kp LG(N6)                 &kp BACKSPACE   &kp LEFT          &kp DOWN          &kp RIGHT          &kp BACKSPACE
-&kp RIGHT   &kp LG(N4)  &kp LG(N1)      &kp LG(N2)      &kp LG(N3)      &kp LC(A)  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&pass       &trans      &kp LG(N4)      &trans          &trans          &trans     &kp BACKSPACE   &kp LC(E)         &kp BACKSPACE     &trans             &trans
+&kp ESCAPE  &trans  &kp LS(LG(N7))  &kp LS(LG(N8))  &kp LS(LG(N9))                    &kp LESS_THAN   &kp GREATER_THAN  &kp UP            &kp UP             &trans
+&kp TAB     &trans  &kp DEL         &kp LG(N5)      &kp LG(N6)                        &kp BACKSPACE   &kp LEFT          &kp DOWN          &kp RIGHT          &kp BACKSPACE
+&kp RIGHT   &trans  &kp LG(N1)      &kp LG(N2)      &kp LG(N3)      &kp LG(NUMBER_4)  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&pass       &trans  &kp LG(N4)      &trans          &kp LC(A)       &kp LC(E)         &trans          &kp LC(E)         &trans            &trans             &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
