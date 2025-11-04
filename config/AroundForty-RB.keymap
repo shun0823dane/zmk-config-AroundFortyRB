@@ -86,6 +86,13 @@
             bindings = <&kp LANG1 &kp COLON &kp ENTER>;
             label = "SYMBOL_COLONG";
         };
+
+        LinkCopy: LinkCopy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(L) &kp LG(C)>;
+            label = "LINKCOPY";
+        };
     };
 
     behaviors {
@@ -175,7 +182,7 @@
         AutoMouse_Layer {
             bindings = <
 &kp ESCAPE  &kp LG(W)      &kp LG(SPACE)  &kp LG(R)      &kp LG(T)              &kp LESS_THAN  &kp GREATER_THAN   &kp BACKSPACE  &kp LG(MINUS)  &kp LG(EQUAL)
-&kp LG(A)   &lt 2 LG(S)    &kp DELETE     &kp LG(F)      &kp LS(LG(T))          &kp LG(N)      &mkp MB1           &mo 8          &mkp MB2       &mkp MB1
+&kp LG(A)   &lt 2 LG(S)    &kp DELETE     &kp LG(F)      &kp LS(LG(T))          &kp LG(N)      &mkp MB1           &mo 8          &LinkCopy      &mkp MB1
 &kp LG(Z)   &kp LG(LA(V))  &kp LA(LG(C))  &kp LS(LG(V))  &trans         &trans  &kp LG(A)      &kp LG(C)          &kp LG(V)      &kp LC(LEFT)   &lt 2 LC(RIGHT)
 &trans      &trans         &trans         &trans         &trans         &trans  &trans         &kp LA(LG(SPACE))  &trans         &kp LC(UP)     &kp LC(UP)
             >;
