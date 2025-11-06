@@ -201,10 +201,10 @@
 
         Scroll_Layer {
             bindings = <
-&kp LC(LA(E))        &kp LG(LEFT)            &kp LG(LA(N7))          &kp LA(LG(N8))  &kp LA(LG(NUMBER_9))                        &trans            &trans             &trans            &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
-&kp LC(LA(RET))      &kp LG(N)               &kp LG(LA(N4))          &kp LA(LG(N5))  &kp LG(LA(N6))                              &kp LEFT_CONTROL  &mkp MB1           &trans            &mkp MB2           &trans
-&kp LC(LA(T))        &kp LG(RIGHT)           &kp LA(LG(NUMBER_1))    &kp LG(LA(N2))  &kp LG(LA(N3))        &trans                &trans            &kp LG(LBKT)       &trans            &kp LG(RBKT)       &trans
-&mt LC(LA(L)) LCTRL  &mt LA(LC(M)) LEFT_ALT  &mt LA(LC(R)) LEFT_WIN  &trans          &trans                &kp LS(LG(NUMBER_4))  &kp LG(ENTER)     &kp LG(LA(SPACE))  &browser_DupPage  &kp LC(LEFT)       &trans
+&kp LC(LA(E))               &kp LG(LEFT)            &kp LG(LA(N7))          &kp LA(LG(N8))  &kp LA(LG(NUMBER_9))                        &trans            &trans             &trans            &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+&kp LC(LA(RET))             &kp LG(N)               &kp LG(LA(N4))          &kp LA(LG(N5))  &kp LG(LA(N6))                              &kp LEFT_CONTROL  &mkp MB1           &trans            &mkp MB2           &trans
+&kp LC(LA(T))               &kp LG(RIGHT)           &kp LA(LG(NUMBER_1))    &kp LG(LA(N2))  &kp LG(LA(N3))        &trans                &trans            &kp LG(LBKT)       &trans            &kp LG(RBKT)       &trans
+&mt LEFT_CONTROL LC(LA(L))  &mt LEFT_ALT LC(LA(M))  &mt LEFT_WIN LA(LC(R))  &trans          &trans                &kp LS(LG(NUMBER_4))  &kp LG(ENTER)     &kp LG(LA(SPACE))  &browser_DupPage  &kp LC(LEFT)       &trans
             >;
         };
     };
