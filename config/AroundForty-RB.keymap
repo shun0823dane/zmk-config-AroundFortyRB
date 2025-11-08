@@ -93,6 +93,20 @@
             bindings = <&kp LG(L) &kp LG(C)>;
             label = "LINKCOPY";
         };
+
+        symbol_backets_hankaku: symbol_backets_hankaku {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "SYMBOL_BACKETS_HANKAKU";
+        };
+
+        symbol_BigKAKKO: symbol_BigKAKKO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG1 &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp SPACE &kp SPACE &kp RIGHT &kp SPACE>;
+            label = "SYMBOL_BIGKAKKO";
+        };
     };
 
     behaviors {
