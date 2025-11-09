@@ -195,10 +195,10 @@
 
         AutoMouse_Layer {
             bindings = <
-&kp ESCAPE  &kp LG(W)      &kp LG(SPACE)  &kp LG(R)      &kp LG(T)              &kp LESS_THAN  &kp GREATER_THAN   &kp BACKSPACE    &kp LG(MINUS)  &kp LG(EQUAL)
-&kp LG(A)   &lt 2 LG(S)    &kp DELETE     &kp LG(F)      &kp LS(LG(T))          &kp LG(N)      &mkp MB1           &mo 8            &LinkCopy      &trans
-&kp LG(Z)   &kp LG(LA(V))  &kp LA(LG(C))  &kp LS(LG(V))  &trans         &trans  &kp LG(A)      &kp LG(C)          &kp LG(V)        &kp LC(UP)     &mkp MB1
-&trans      &trans         &trans         &trans         &trans         &trans  &trans         &kp LA(LG(SPACE))  &lt 2 LC(LA(C))  &kp LC(LEFT)   &kp LC(RIGHT)
+&kp ESCAPE  &kp LG(W)      &kp LG(SPACE)  &kp LG(R)      &kp LG(T)                     &kp LESS_THAN  &kp GREATER_THAN   &kp BACKSPACE  &kp LG(MINUS)  &kp LG(EQUAL)
+&kp LG(A)   &lt 2 LG(S)    &kp DELETE     &kp LG(F)      &kp LS(LG(T))                 &kp LG(N)      &mkp MB1           &mo 8          &LinkCopy      &trans
+&kp LG(Z)   &kp LG(LA(V))  &kp LA(LG(C))  &kp LS(LG(V))  &trans         &kp LA(LG(T))  &kp LS(LC(N))  &kp LG(C)          &kp LG(V)      &kp LC(UP)     &mkp MB1
+&trans      &trans         &trans         &trans         &trans         &trans         &trans         &kp LA(LG(SPACE))  &trans         &kp LC(LEFT)   &kp LC(RIGHT)
             >;
         };
 
