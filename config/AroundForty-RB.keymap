@@ -153,7 +153,7 @@
             bindings = <
 &kp ESCAPE   &kp LA(LG(UP))    &kp LS(LG(N7))  &kp LS(LG(N8))  &kp LS(LG(N9))                    &kp LESS_THAN   &kp GREATER_THAN  &kp UP            &kp UP             &pass
 &kp TAB      &kp LA(LG(DOWN))  &kp DEL         &kp LG(N5)      &kp LG(N6)                        &kp BACKSPACE   &kp LEFT          &kp DOWN          &kp RIGHT          &kp BACKSPACE
-&kp LG(Z)    &trans            &kp LG(N1)      &kp LG(N2)      &kp LG(N3)      &kp LG(NUMBER_4)  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&kp LG(Z)    &trans            &kp LG(N1)      &kp LG(N2)      &kp LG(N3)      &kp LG(NUMBER_4)  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LC(K)
 &kp LS(TAB)  &trans            &kp LG(N4)      &trans          &kp LC(A)       &kp LC(E)         &trans          &kp LC(E)         &trans            &trans             &trans
             >;
 
