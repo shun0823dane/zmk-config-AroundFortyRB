@@ -140,10 +140,10 @@
 
         Mac-Default_Layer {
             bindings = <
-&kp Q          &kp W                   &kp E                       &kp R               &kp T                                   &kp Y        &kp U                    &kp I        &kp O        &kp P
-&kp A          &kp S                   &kp D                       &kp F               &kp G                                   &kp H        &kp J                    &lt 8 K      &kp L        &lt 2 MINUS
-&kp Z          &kp X                   &kp C                       &kp V               &kp B          &mt LG(LA(T)) LG(ENTER)  &kp N        &kp M                    &kp COMMA    &kp PERIOD   &mkp MB1
-&mt LCTRL TAB  &mt LEFT_ALT LS(ENTER)  &mt LS(LEFT_GUI) LS(ENTER)  &mt LEFT_WIN LANG2  &kp BACKSPACE  &mt LEFT_SHIFT SPACE     &lt 1 LANG1  &mt LA(LG(SPACE)) SLASH  &lt 2 ENTER  &lt 7 LG(Z)  &mt LG(Y) DELETE
+&kp Q          &kp W                   &kp E                   &kp R                   &kp T                                   &kp Y        &kp U                    &kp I        &kp O        &kp P
+&kp A          &kp S                   &kp D                   &kp F                   &kp G                                   &kp H        &kp J                    &lt 8 K      &kp L        &lt 2 MINUS
+&kp Z          &kp X                   &kp C                   &kp V                   &kp B          &mt LG(LA(T)) LG(ENTER)  &kp N        &kp M                    &kp COMMA    &kp PERIOD   &mkp MB1
+&mt LCTRL TAB  &mt LEFT_ALT LS(ENTER)  &mt LEFT_GUI LS(ENTER)  &mt LS(LEFT_WIN) LANG2  &kp BACKSPACE  &mt LEFT_SHIFT SPACE     &lt 1 LANG1  &mt LA(LG(SPACE)) SLASH  &lt 2 ENTER  &lt 7 LG(Z)  &mt LG(Y) DELETE
             >;
         };
 
@@ -158,7 +158,7 @@
 
         Control_Layer {
             bindings = <
-&kp LG(LA(UP))   &kp LG(W)  &kp LS(LG(N7))  &kp LS(LG(N8))  &kp LS(LG(N9))                    &kp LESS_THAN  &kp GREATER_THAN  &kp UP     &kp UP                 &pass
+&kp LG(Q)        &kp LG(W)  &kp LS(LG(N7))  &kp LS(LG(N8))  &kp LS(LG(N9))                    &kp LESS_THAN  &kp GREATER_THAN  &kp UP     &kp UP                 &pass
 &kp LA(LG(TAB))  &trans     &kp DEL         &kp LG(N5)      &kp LG(N6)                        &kp BACKSPACE  &kp LEFT          &kp DOWN   &kp RIGHT              &kp BACKSPACE
 &kp LG(Z)        &trans     &kp LG(N1)      &kp LG(N2)      &kp LG(N3)      &kp LG(NUMBER_4)  &trans         &kp LC(A)         &kp LC(K)  &kp LC(RIGHT_BRACKET)  &trans
 &kp LS(TAB)      &trans     &kp LG(N4)      &trans          &kp LC(A)       &kp LC(E)         &trans         &kp LC(E)         &trans     &trans                 &trans
