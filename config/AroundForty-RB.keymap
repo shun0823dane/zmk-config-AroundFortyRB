@@ -90,7 +90,7 @@
         LinkCopy: LinkCopy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(L) &kp LG(C)>;
+            bindings = <&kp LG(L) &kp LG(C) &kp ESCAPE>;
             label = "LINKCOPY";
         };
 
