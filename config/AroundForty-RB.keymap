@@ -212,7 +212,7 @@
 &kp ESCAPE  &kp LG(LC(W))    &kp LG(SPACE)  &kp LG(R)      &kp LG(T)              &kp LESS_THAN      &kp GREATER_THAN  &kp BACKSPACE  &kp LG(MINUS)  &kp LG(EQUAL)
 &kp LG(A)   &lt 2 LG(LS(S))  &kp DELETE     &kp LG(F)      &kp LS(LG(T))          &kp LG(LA(SPACE))  &mkp MB1          &mo 8          &LinkCopy      &trans
 &kp LG(Z)   &kp LG(LA(V))    &kp LA(LG(C))  &kp LS(LG(V))  &kp RG(B)      &trans  &kp LS(LC(N))      &kp LG(C)         &kp LG(V)      &kp LC(UP)     &mkp MB1
-&trans      &trans           &trans         &trans         &trans         &trans  &trans             &kp LG(W)         &trans         &kp LC(LEFT)   &kp LC(RIGHT)
+&trans      &trans           &trans         &trans         &trans         &trans  &trans             &kp LG(W)         &lt 2 ENTER    &kp LC(LEFT)   &kp LC(RIGHT)
             >;
         };
 
