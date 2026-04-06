@@ -5,7 +5,7 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 &default_transform {
-    col-offset = <1>;
+    col-offset = <6>;
 };
 
 &kscan0 {
@@ -33,7 +33,7 @@
         device = <&trackball>;
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
                            <&zip_xy_scaler 1 1>,
-                           <&zip_temp_layer_tuned 6 300>;
+                           <&zip_temp_layer_tuned 1 300>;
         scroll-layer {
             layers = <8>;
             /* 【修正】zip_xy_to_scroll_mapperの直後にトランスフォーマーを挿入して反転させます */
