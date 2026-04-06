@@ -21,14 +21,19 @@
 
 / {
     /* スクロール方向をいつでも反転できるようにするための設定 */
-    /* 反転させたい場合は compatible を "zmk,input_processor_xy_to_scroll" に変え、*/
-    /* 下の scroll-layer のマッパー参照先を &zip_xy_to_scroll_mapper_tune に変更してください */
     zip_xy_to_scroll_mapper_tune: zip_xy_to_scroll_mapper_tune {
         compatible = "zmk,input_processor_xy_to_scroll";
         #input-processor-cells = <0>;
-        /* 必要に応じてコメントを外して反転 */
         scroll-y-invert;
         scroll-x-invert;
+    };
+
+    /* 【追加】AMLの誤爆を防ぐカスタムプロセッサを定義 */
+    zip_temp_layer_tuned: zip_temp_layer_tuned {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        /* キー入力後、指定した時間(ミリ秒)はAMLを起動しない */
+        require-prior-idle-ms = <250>; 
     };
 
     trackball_listener: trackball_listener {
@@ -36,11 +41,10 @@
         device = <&trackball>;
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
                            <&zip_xy_scaler 1 1>,
-                            /* AMLを有効にしたい場合は下のコメントを外してください */
-                           <&zip_temp_layer 6 300>;
+                           <&zip_temp_layer_tuned 6 300>;
         scroll-layer {
             layers = <8>;
-            input-processors = <&zip_xy_to_scroll_mapper>,
+            input-processors = <&zip_xy_to_scroll_mapper_tune>,
                                <&zip_scroll_scaler 1 30>;
         };
     };
@@ -83,7 +87,7 @@
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
-        cpi = <600>;
+        cpi = <500>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         force-awake;
     };
