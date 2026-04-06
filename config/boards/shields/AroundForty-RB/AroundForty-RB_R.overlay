@@ -27,8 +27,8 @@
         compatible = "zmk,input_processor_xy_to_scroll";
         #input-processor-cells = <0>;
         /* 必要に応じてコメントを外して反転 */
-        // scroll-y-invert;
-        // scroll-x-invert;
+        scroll-y-invert;
+        scroll-x-invert;
     };
 
     trackball_listener: trackball_listener {
@@ -41,7 +41,7 @@
         scroll-layer {
             layers = <8>;
             input-processors = <&zip_xy_to_scroll_mapper>,
-                               <&zip_scroll_scaler 1 45>;
+                               <&zip_scroll_scaler 1 30>;
         };
     };
 };
@@ -83,7 +83,7 @@
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
-        cpi = <400>;
+        cpi = <600>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         force-awake;
     };
