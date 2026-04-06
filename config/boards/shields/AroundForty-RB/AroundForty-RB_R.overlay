@@ -36,11 +36,11 @@
         device = <&trackball>;
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
                            <&zip_xy_scaler 1 1>;
-                           /* AMLを有効にしたい場合は下のコメントを外してください */
-                           // <&zip_temp_layer 9 300>;
+                            /* AMLを有効 */
+                           <&zip_temp_layer 6 300>;
 
         scroll-layer {
-            layers = <6 7>;
+            layers = <8>;
             input-processors = <&zip_xy_to_scroll_mapper>, 
                                <&zip_scroll_scaler 1 45>;
         };
