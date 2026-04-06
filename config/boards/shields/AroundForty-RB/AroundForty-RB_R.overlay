@@ -20,14 +20,6 @@
 
 
 / {
-    /* スクロール方向をいつでも反転できるようにするための設定 */
-    zip_xy_to_scroll_mapper_tune: zip_xy_to_scroll_mapper_tune {
-        compatible = "zmk,input_processor_xy_to_scroll";
-        #input-processor-cells = <0>;
-        scroll-y-invert;
-        scroll-x-invert;
-    };
-
     /* 【追加】AMLの誤爆を防ぐカスタムプロセッサを定義 */
     zip_temp_layer_tuned: zip_temp_layer_tuned {
         compatible = "zmk,input-processor-temp-layer";
@@ -44,7 +36,9 @@
                            <&zip_temp_layer_tuned 6 300>;
         scroll-layer {
             layers = <8>;
-            input-processors = <&zip_xy_to_scroll_mapper_tune>,
+            /* 【修正】zip_xy_to_scroll_mapperの直後にトランスフォーマーを挿入して反転させます */
+            input-processors = <&zip_xy_to_scroll_mapper>,
+                               <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>,
                                <&zip_scroll_scaler 1 30>;
         };
     };
