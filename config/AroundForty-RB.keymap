@@ -121,6 +121,20 @@
             bindings = <&kp LANG2 &kp HASH &kp SPACE>;
             label = "HASHANDSPACE";
         };
+
+        CommaAndSpace: comma_and_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &kp COMMA &kp SPACE>;
+            label = "COMMA_AND_SPACE";
+        };
+
+        HyphoneAndSpace: HyphoneAndSpace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &kp MINUS &kp SPACE>;
+            label = "HYPHONEANDSPACE";
+        };
     };
 
     behaviors {
