@@ -25,7 +25,7 @@
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
         /* キー入力後、指定した時間(ミリ秒)はAMLを起動しない */
-        require-prior-idle-ms = <400>; 
+        require-prior-idle-ms = <300>; 
     };
 
     trackball_listener: trackball_listener {
