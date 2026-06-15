@@ -195,7 +195,7 @@
 
         Control_Layer {
             bindings = <
-&kp LG(LS(LEFT_BRACE))     &kp LG(W)  &kp LS(LG(N7))  &kp LS(LG(N8))  &kp LS(LG(N9))                    &kp LESS_THAN      &kp GREATER_THAN  &kp UP     &kp UP                 &pass
+&kp LG(LS(LEFT_BRACKET))   &kp LG(W)  &kp LS(LG(N7))  &kp LS(LG(N8))  &kp LS(LG(N9))                    &kp LESS_THAN      &kp GREATER_THAN  &kp UP     &kp UP                 &pass
 &kp LG(LS(RIGHT_BRACKET))  &trans     &kp DEL         &kp LG(N5)      &kp LG(N6)                        &kp BACKSPACE      &kp LEFT          &kp DOWN   &kp RIGHT              &kp BACKSPACE
 &kp LG(Z)                  &trans     &kp LG(N1)      &kp LG(N2)      &kp LG(N3)      &kp LG(NUMBER_4)  &kp LG(V)          &kp LG(V)         &kp LC(K)  &kp LC(RIGHT_BRACKET)  &trans
 &kp LS(TAB)                &trans     &kp LG(N4)      &kp LG(V)       &kp LC(A)       &kp LC(E)         &Ctrl_E_and_Enter  &kp LC(E)         &trans     &trans                 &trans
