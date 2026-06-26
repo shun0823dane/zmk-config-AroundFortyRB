@@ -14,6 +14,23 @@
 };
 
 / {
+    combos { compatible = "zmk,combos"; };
+
+    macros {
+        to_layer_0: to_layer_0 {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "TO_LAYER_0";
+        };
+
+        pass: pass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(A) &kp S &kp H &kp U &kp C &kp K &kp N1 &kp O &kp M &kp N2 &kp RET>;
+            label = "PASS";
+        };
+
         symbol_brackets_KAGI: brackets_KAGI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
