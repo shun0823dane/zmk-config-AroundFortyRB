@@ -22,9 +22,9 @@
     zip_temp_layer_threshold: zip_temp_layer_threshold {
         compatible = "zmk,input-processor-temp-layer-threshold";
         #input-processor-cells = <2>;
-        threshold = <4>;
+        threshold = <10>;
         excluded-positions = <17 30>;
-        require-prior-idle-ms = <500>;
+        require-prior-idle-ms = <600>;
         reset-timeout-ms = <20>;
     };
 
