@@ -24,8 +24,8 @@
         #input-processor-cells = <2>;
         threshold = <2>;
         excluded-positions = <17 30>;
-        require-prior-idle-ms = <250>;
-        reset-timeout-ms = <150>;
+        require-prior-idle-ms = <400>;
+        reset-timeout-ms = <100>;
     };
 
     trackball_listener: trackball_listener {
