@@ -1,5 +1,6 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 6
+#define AML 1
 
 #include <behaviors/rgbled_widget.dtsi>  // needed to use the behaviors
 #include <dt-bindings/zmk/mouse.h>
@@ -14,6 +15,31 @@
 };
 
 / {
+　　zip_temp_layer_threshold: zip_temp_layer_threshold {
+        compatible = "zmk,input-processor-temp-layer-threshold";
+        #input-processor-cells = <2>;
+        
+        // Cumulative movement required before activation
+        threshold = <15>;
+        
+        // Key positions that won't deactivate the layer
+        excluded-positions = <18 19 20>;
+        
+        // Don't activate if key was pressed within this time
+        require-prior-idle-ms = <300>;
+        
+        // Reset accumulated movement after this timeout
+        reset-timeout-ms = <200>;
+    };
+
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>; // ※注意点参照
+        
+        // <layer_index timeout_ms>
+        input-processors = <&zip_temp_layer_threshold AML 30000>;
+    };
+
     combos { compatible = "zmk,combos"; };
 
     macros {
