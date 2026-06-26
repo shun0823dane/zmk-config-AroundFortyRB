@@ -22,5 +22,9 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: v0.3-branch
+    # 【追加】閾値モジュールの実体をダウンロードする指定
+    - name: zmk-input-processor-temp-layer-threshold
+      remote: yamaryu211
+      revision: main
   self:
     path: config
