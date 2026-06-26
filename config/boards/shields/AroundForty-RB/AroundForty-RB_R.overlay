@@ -25,16 +25,16 @@
         #input-processor-cells = <2>;
         
         // AML発動に必要な累積移動量 (必要に応じて数値を調整)
-        threshold = <15>;
+        threshold = <3>;
         
         // 以下のポジションのキーを押した場合はAMLを解除しない
         excluded-positions = <18 19 20>;
         
         // キー入力から指定した時間(ミリ秒)はAMLを発動しない
-        require-prior-idle-ms = <300>;
+        require-prior-idle-ms = <0>;
         
         // 蓄積された移動量をリセットするまでの時間
-        reset-timeout-ms = <200>;
+        reset-timeout-ms = <500>;
     };
 
     trackball_listener: trackball_listener {
