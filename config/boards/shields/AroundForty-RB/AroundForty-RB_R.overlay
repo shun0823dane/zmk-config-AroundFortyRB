@@ -42,21 +42,20 @@
 
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
-        device = <&trackball>;
-        
-        // 通常時（ベースプロセッサ）
+        // ★ここをコメントアウト、または削除する
+        // device = <&trackball>;
+
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
                            <&zip_xy_scaler 1 1>,
-                           <&zip_temp_layer_threshold 1 30000>;
+                           // ★まずは標準モジュールでAMLが起動するかテストする
+                           <&zip_temp_layer 1 30000>; 
 
-        // レイヤー8用のスクロール設定（元の正しい入れ子構造に戻す）
         scroll-layer {
             layers = <8>;
             input-processors = <&zip_xy_to_scroll_mapper>,
                                <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
                                <&zip_scroll_scaler 1 20>;
         };
-    };
 };
 
 &pinctrl {
