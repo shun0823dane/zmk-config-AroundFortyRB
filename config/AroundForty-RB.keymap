@@ -15,7 +15,6 @@
 
 / {
     combos { compatible = "zmk,combos"; };
-
     macros {
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
