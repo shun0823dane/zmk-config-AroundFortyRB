@@ -21,22 +21,37 @@
 
 / {
     /* 【追加】AMLの誤爆を防ぐカスタムプロセッサを定義 */
-    zip_temp_layer_tuned: zip_temp_layer_tuned {
-        compatible = "zmk,input-processor-temp-layer";
+    zip_temp_layer_threshold: zip_temp_layer_threshold {
+        compatible = "zmk,input-processor-temp-layer-threshold";
         #input-processor-cells = <2>;
-        /* キー入力後、指定した時間(ミリ秒)はAMLを起動しない */
-        require-prior-idle-ms = <300>; 
+        
+        // AML発動に必要な累積移動量 (必要に応じて数値を調整)
+        threshold = <15>;
+        
+        // 以下のポジションのキーを押した場合はAMLを解除しない
+        excluded-positions = <18 19 20>;
+        
+        // キー入力から指定した時間(ミリ秒)はAMLを発動しない
+        require-prior-idle-ms = <300>;
+        
+        // 蓄積された移動量をリセットするまでの時間
+        reset-timeout-ms = <200>;
     };
 
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        /* 【変更】一番下のプロセッサを zip_temp_layer_threshold に変更 */
+        /* 引数: <プロセッサ名 レイヤー番号 タイムアウト(ms)> */
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
                            <&zip_xy_scaler 1 1>,
-                           <&zip_temp_layer_tuned 1 300>;
+                           <&zip_temp_layer_threshold 1 30000>; 
+                           // ↑ レイヤー1(AutoMouse_Layer) を起動。30000は維持時間
+
         scroll-layer {
             layers = <8>;
-            /* 【修正】zip_xy_to_scroll_mapperの直後にトランスフォーマーを挿入して反転させます */
+            /* zip_xy_to_scroll_mapperの直後にトランスフォーマーを挿入して反転させます */
             input-processors = <&zip_xy_to_scroll_mapper>,
                                <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
                                <&zip_scroll_scaler 1 20>;
