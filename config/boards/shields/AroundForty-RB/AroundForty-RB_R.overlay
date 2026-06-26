@@ -18,9 +18,8 @@
         ;
 };
 
-
 / {
-    /* 【追加】AMLの誤爆を防ぐカスタムプロセッサを定義 */
+    /* AMLの誤爆を防ぐカスタムプロセッサを定義 */
     zip_temp_layer_threshold: zip_temp_layer_threshold {
         compatible = "zmk,input-processor-temp-layer-threshold";
         #input-processor-cells = <2>;
@@ -42,7 +41,7 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        /* 【変更】一番下のプロセッサを zip_temp_layer_threshold に変更 */
+        /* 一番下のプロセッサを zip_temp_layer_threshold に変更 */
         /* 引数: <プロセッサ名 レイヤー番号 タイムアウト(ms)> */
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
                            <&zip_xy_scaler 1 1>,
