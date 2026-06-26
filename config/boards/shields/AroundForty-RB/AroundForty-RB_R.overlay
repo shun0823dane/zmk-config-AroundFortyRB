@@ -27,8 +27,11 @@
         // AML発動に必要な累積移動量 (必要に応じて数値を調整)
         threshold = <3>;
         
-        // 以下のポジションのキーを押した場合はAMLを解除しない
-        excluded-positions = <18 19 20>;
+        // ▼ここを修正▼
+        // 17番: mo 8 / lt 8 K (スクロールレイヤー切り替え)
+        // 30番: mkp MB1 (左クリック)
+        // これらのキーを押してもAML（レイヤー1）が解除されないようにする
+        excluded-positions = <17 30>;
         
         // キー入力から指定した時間(ミリ秒)はAMLを発動しない
         require-prior-idle-ms = <0>;
@@ -40,19 +43,19 @@
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        
+        // 通常時（ベースプロセッサ）
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
                            <&zip_xy_scaler 1 1>,
                            <&zip_temp_layer_threshold 1 30000>;
-    };
 
-    // レイヤー8用のスクロールリスナー（独立させる）
-    trackball_scroll_listener: trackball_scroll_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-        layers = <8>; // レイヤー8が有効な時だけ発動
-        input-processors = <&zip_xy_to_scroll_mapper>,
-                           <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-                           <&zip_scroll_scaler 1 20>;
+        // レイヤー8用のスクロール設定（元の正しい入れ子構造に戻す）
+        scroll-layer {
+            layers = <8>;
+            input-processors = <&zip_xy_to_scroll_mapper>,
+                               <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+                               <&zip_scroll_scaler 1 20>;
+        };
     };
 };
 
