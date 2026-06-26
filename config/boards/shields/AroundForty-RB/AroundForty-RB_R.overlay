@@ -25,7 +25,7 @@
         threshold = <4>;
         excluded-positions = <17 30>;
         require-prior-idle-ms = <500>;
-        reset-timeout-ms = <50>;
+        reset-timeout-ms = <20>;
     };
 
     trackball_listener: trackball_listener {
