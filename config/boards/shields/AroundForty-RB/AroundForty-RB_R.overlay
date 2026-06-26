@@ -19,42 +19,31 @@
 };
 
 / {
-    /* AMLの誤爆を防ぐカスタムプロセッサを定義 */
     zip_temp_layer_threshold: zip_temp_layer_threshold {
         compatible = "zmk,input-processor-temp-layer-threshold";
         #input-processor-cells = <2>;
-        
-        // AML発動に必要な累積移動量 (必要に応じて数値を調整)
         threshold = <3>;
-        
-        // ▼ここを修正▼
-        // 17番: mo 8 / lt 8 K (スクロールレイヤー切り替え)
-        // 30番: mkp MB1 (左クリック)
-        // これらのキーを押してもAML（レイヤー1）が解除されないようにする
         excluded-positions = <17 30>;
-        
-        // キー入力から指定した時間(ミリ秒)はAMLを発動しない
         require-prior-idle-ms = <0>;
-        
-        // 蓄積された移動量をリセットするまでの時間
         reset-timeout-ms = <500>;
     };
 
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-
+        
+        // 動作確認のため、一時的に標準の zip_temp_layer にしています
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
                            <&zip_xy_scaler 1 1>,
-                           // ★まずは標準モジュールでAMLが起動するかテストする
                            <&zip_temp_layer 1 30000>; 
-
-        scroll-layer {
+        
+        scroller {
             layers = <8>;
             input-processors = <&zip_xy_to_scroll_mapper>,
                                <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
                                <&zip_scroll_scaler 1 20>;
         };
+    };
 };
 
 &pinctrl {
