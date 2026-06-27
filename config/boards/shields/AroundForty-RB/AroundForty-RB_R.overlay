@@ -28,7 +28,7 @@
         // AML解除の除外キー
         excluded-positions = <17 30>;
         // キー操作後に移動量計測するまで無視する時間
-        require-prior-idle-ms = <700>;
+        require-prior-idle-ms = <500>;
         // 移動データ回数リセットまでに要する時間
         reset-timeout-ms = <10>;
     };
@@ -37,10 +37,9 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
         
-        // 動作確認のため、一時的に標準の zip_temp_layer にしています
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
                            <&zip_xy_scaler 1 1>,
-                           <&zip_temp_layer 1 300>; 
+                           <&zip_temp_layer_threshold 1 300>; 
         
         scroller {
             layers = <8>;
