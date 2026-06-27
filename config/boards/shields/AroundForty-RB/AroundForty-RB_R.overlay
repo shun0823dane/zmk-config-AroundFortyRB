@@ -19,12 +19,17 @@
 };
 
 / {
+    // キーボード操作後require-prior-idle-ms経つと時間計測を開始し、AMLの起動を許可する
     zip_temp_layer_threshold: zip_temp_layer_threshold {
         compatible = "zmk,input-processor-temp-layer-threshold";
         #input-processor-cells = <2>;
-        threshold = <100>;
+        // レイヤー移動する移動量の閾値
+        threshold = <150>;
+        // AML解除の除外キー
         excluded-positions = <17 30>;
-        require-prior-idle-ms = <500>;
+        // キー操作後に移動量計測するまでの時間
+        require-prior-idle-ms = <700>;
+        // 蓄積された移動量（カウント）を「ゼロにリセットする」までの時間（ミリ秒）
         reset-timeout-ms = <30>;
     };
 
