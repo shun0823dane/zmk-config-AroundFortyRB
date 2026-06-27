@@ -33,13 +33,20 @@
         reset-timeout-ms = <1000>;
     };
 
+    aml_temp_layer: aml_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        excluded-positions = <17 30>;
+        require-prior-idle-ms = <400>;
+    };
+
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
         
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
                            <&zip_xy_scaler 1 1>,
-                           <&zip_temp_layer 1 600>; 
+                           <&aml_temp_layer 1 300>; 
         
         scroller {
             layers = <8>;
