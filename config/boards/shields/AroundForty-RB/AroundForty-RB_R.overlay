@@ -23,14 +23,14 @@
     zip_temp_layer_threshold: zip_temp_layer_threshold {
         compatible = "zmk,input-processor-temp-layer-threshold";
         #input-processor-cells = <2>;
-        // レイヤー移動する移動量の閾値
-        threshold = <150>;
+        // 移動データ回数を足し、この数値に達した瞬間にAMLを起動
+        threshold = <300>;
         // AML解除の除外キー
         excluded-positions = <17 30>;
-        // キー操作後に移動量計測するまでの時間
+        // キー操作後に移動量計測するまで無視する時間
         require-prior-idle-ms = <700>;
-        // 蓄積された移動量（カウント）を「ゼロにリセットする」までの時間（ミリ秒）
-        reset-timeout-ms = <30>;
+        // 移動データ回数リセットまでに要する時間
+        reset-timeout-ms = <10>;
     };
 
     trackball_listener: trackball_listener {
