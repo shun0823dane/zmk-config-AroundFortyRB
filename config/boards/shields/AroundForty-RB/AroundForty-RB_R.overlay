@@ -50,11 +50,6 @@
     };
 };
 
-&zip_temp_layer {
-    excluded-positions = <17 30>;
-    require-prior-idle-ms = <400>;
-};
-
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
