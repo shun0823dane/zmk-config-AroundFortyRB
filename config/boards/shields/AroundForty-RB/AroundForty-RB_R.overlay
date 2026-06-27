@@ -24,13 +24,13 @@
         compatible = "zmk,input-processor-temp-layer-threshold";
         #input-processor-cells = <2>;
         // 移動データ回数を足し、この数値に達した瞬間にAMLを起動
-        threshold = <20>;
+        threshold = <5>;
         // AML解除の除外キー
         excluded-positions = <17 30>;
         // キー操作後に移動量計測するまで無視する時間
-        require-prior-idle-ms = <250>;
+        require-prior-idle-ms = <0>;
         // 移動データ回数リセットまでに要する時間
-        reset-timeout-ms = <150>;
+        reset-timeout-ms = <1000>;
     };
 
     trackball_listener: trackball_listener {
@@ -39,7 +39,7 @@
         
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
                            <&zip_xy_scaler 1 1>,
-                           <&zip_temp_layer_threshold 1 600>; 
+                           <&zip_temp_layer_threshold 1 3000>; 
         
         scroller {
             layers = <8>;
