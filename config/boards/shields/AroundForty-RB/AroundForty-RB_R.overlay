@@ -19,6 +19,7 @@
 };
 
 / {
+    // 未使用
     // キーボード操作後require-prior-idle-ms経つと時間計測を開始し、AMLの起動を許可する
     zip_temp_layer_threshold: zip_temp_layer_threshold {
         compatible = "zmk,input-processor-temp-layer-threshold";
@@ -36,7 +37,8 @@
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        
+
+        // ここのzip_temp_layerを編集
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
                            <&zip_xy_scaler 1 1>,
                            <&zip_temp_layer 1 30>; 
