@@ -41,7 +41,7 @@
         // ここのzip_temp_layerを編集
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
                            <&zip_xy_scaler 1 1>,
-                           <&zip_temp_layer 1 30>; 
+                           <&zip_temp_layer 1 20>; 
         
         scroller {
             layers = <8>;
