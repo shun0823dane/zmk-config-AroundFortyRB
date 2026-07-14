@@ -321,9 +321,9 @@
 
         Scroll_XiaomiPad_Layer {
             bindings = <
-&kp LG(DOWN)               &kp LA(LEFT)            &kp LC(LA(N7))          &kp LA(LC(N8))  &kp LA(LC(N9))                  &trans               &kp LC(LS(TAB))    &trans                   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+&kp LG(DOWN)               &kp LG(LEFT)            &kp LC(LA(N7))          &kp LA(LC(N8))  &kp LA(LC(N9))                  &trans               &kp LC(LS(TAB))    &trans                   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
 &kp LG(UP)                 &kp LG(N)               &kp LG(A)               &kp LA(LC(N5))  &kp LC(LA(N6))                  &CreatNewTab_Xiaomi  &kp LC(TAB)        &trans                   &mkp MB2           &trans
-&kp LG(DOWN)               &kp LA(RIGHT)           &kp LA(LC(N1))          &kp LC(LA(N2))  &kp LC(LA(N3))  &kp LC(LS(N4))  &trans               &kp LA(LEFT)       &kp LA(LC(T))            &kp LA(RIGHT)      &trans
+&kp LG(DOWN)               &kp LG(RIGHT)           &kp LA(LC(N1))          &kp LC(LA(N2))  &kp LC(LA(N3))  &kp LC(LS(N4))  &trans               &kp LA(LEFT)       &kp LA(LC(T))            &kp LA(RIGHT)      &trans
 &mt LEFT_CONTROL LG(DOWN)  &mt LEFT_ALT LC(LA(M))  &mt LEFT_WIN LA(LC(R))  &trans          &kp LC(LS(N3))  &kp LC(LS(N4))  &kp LC(ENTER)        &kp LC(LA(SPACE))  &browser_DupPage_Xiaomi  &kp LC(LEFT)       &trans
             >;
         };
