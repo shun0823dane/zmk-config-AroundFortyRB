@@ -272,10 +272,10 @@
 
         AutoMouse_XiaomiPad_Layer {
             bindings = <
-&kp ESCAPE           &kp LC(W)              &kp C_AC_SEARCH  &kp LC(R)      &kp LC(T)                     &kp LESS_THAN     &kp GREATER_THAN         &LinkCopy_Xiaomi       &kp LC(MINUS)          &kp LC(EQUAL)
-&trans               &lt CONTROL LC(LS(S))  &kp DELETE       &kp LC(F)      &kp LS(LC(T))                 &kp LC(A)         &kp LC(V)                &mo SCROLL             &kp RIGHT              &HyphoneAndSpace
-&mt LC(LS(Z)) LC(Z)  &kp LC(LA(V))          &kp LA(LC(C))    &kp LS(LC(V))  &kp LC(S)      &kp LC(ENTER)  &trans            &kp LC(C)                &CommaAndSpace         &kp LA(TAB)            &mkp MB1
-&trans               &trans                 &trans           &trans         &trans         &trans         &lt NUMBER LANG1  &mt LC(LA(SPACE)) LC(W)  &lt CONTROL LC(ENTER)  &lt SETTINGS LC(LEFT)  &kp LC(RIGHT)
+&kp ESCAPE           &kp LC(W)              &kp C_AC_SEARCH  &kp LC(R)      &kp LC(T)                     &kp LESS_THAN     &kp GREATER_THAN         &LinkCopy_Xiaomi       &kp LC(MINUS)         &kp LC(EQUAL)
+&trans               &lt CONTROL LC(LS(S))  &kp DELETE       &kp LC(F)      &kp LS(LC(T))                 &kp LC(A)         &kp LC(V)                &mo SCROLL             &kp RIGHT             &HyphoneAndSpace
+&mt LC(LS(Z)) LC(Z)  &kp LC(LA(V))          &kp LA(LC(C))    &kp LS(LC(V))  &kp LC(S)      &kp LC(ENTER)  &trans            &kp LC(C)                &CommaAndSpace         &kp LG(UP)            &mkp MB1
+&trans               &trans                 &trans           &trans         &trans         &trans         &lt NUMBER LANG1  &mt LC(LA(SPACE)) LC(W)  &lt CONTROL LC(ENTER)  &lt SETTINGS LA(TAB)  &kp LA(TAB)
             >;
         };
 
