@@ -18,7 +18,7 @@
         ;
 };
 
-{
+/{
     // 未使用
     // キーボード操作後require-prior-idle-ms経つと時間計測を開始し、AMLの起動を許可する
     zip_temp_layer_threshold: zip_temp_layer_threshold {
