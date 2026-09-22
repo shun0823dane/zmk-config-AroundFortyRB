@@ -26,18 +26,12 @@
         compatible = "zmk,input-processor-temp-layer-threshold";
         #input-processor-cells = <2>;
 
-        // 累積移動量がこの数値に達した時点でAMLを起動
-        // 0の場合は即時起動
-        threshold = <0>;
+        threshold = <15>;
+        require-prior-idle-ms = <250>;
+        reset-timeout-ms = <200>;
 
         // 押してもAMLを解除しないキー位置)（使わない）
         //excluded-positions = <17 30>;
-
-        // キー操作後、移動量の計測を無視する時間
-        require-prior-idle-ms = <0>;
-
-        // 累積移動量をリセットするまでの無動作時間
-        reset-timeout-ms = <1000>;
     };
 
     trackball_listener: trackball_listener {
