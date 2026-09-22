@@ -254,10 +254,10 @@
 
         Mac-Default_Layer {
             bindings = <
-&lt SETTINGS Q   &kp W                   &kp E         &kp R                   &kp T                                   &kp Y             &kp U                    &kp I              &kp O                   &kp P
+&mt ESCAPE Q     &kp W                   &kp E         &kp R                   &kp T                                   &kp Y             &kp U                    &kp I              &kp O                   &kp P
 &kp A            &kp S                   &kp D         &kp F                   &kp G                                   &kp H             &kp J                    &lt SCROLL K       &kp L                   &lt CONTROL MINUS
 &mt LG(LS(Z)) Z  &kp X                   &kp C         &kp V                   &kp B          &mt LG(LA(T)) LG(ENTER)  &kp N             &kp M                    &kp COMMA          &kp PERIOD              &mkp MB1
-&mt LCTRL TAB    &mt LEFT_ALT LS(ENTER)  &kp LEFT_GUI  &mt LS(LEFT_WIN) LANG2  &kp BACKSPACE  &mt LEFT_SHIFT SPACE     &lt NUMBER LANG1  &mt LA(LG(SPACE)) SLASH  &lt CONTROL ENTER  &lt SETTINGS BACKSLASH  &mt LG(Y) CAPSLOCK
+&mt LCTRL TAB    &mt LEFT_ALT LS(ENTER)  &kp LEFT_GUI  &mt LS(LEFT_WIN) LANG2  &kp BACKSPACE  &mt LEFT_SHIFT SPACE     &lt NUMBER LANG1  &mt LA(LG(SPACE)) SLASH  &lt CONTROL ENTER  &lt SETTINGS BACKSLASH  &lt 1 CAPSLOCK
             >;
         };
 
