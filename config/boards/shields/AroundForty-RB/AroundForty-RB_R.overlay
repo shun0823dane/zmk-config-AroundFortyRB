@@ -19,35 +19,41 @@
 };
 
 / {
-    // 未使用
-    // キーボード操作後require-prior-idle-ms経つと時間計測を開始し、AMLの起動を許可する
+    // 閾値付きAML
+    // キーボード操作後require-prior-idle-ms経つと、
+    // 移動量の計測を開始してAMLの起動を許可する
     zip_temp_layer_threshold: zip_temp_layer_threshold {
         compatible = "zmk,input-processor-temp-layer-threshold";
         #input-processor-cells = <2>;
-        // 移動データ回数を足し、この数値に達した瞬間にAMLを起動
-        threshold = <5>;
-        // AML解除の除外キー
-        excluded-positions = <17 30>;
-        // キー操作後に移動量計測するまで無視する時間
-        require-prior-idle-ms = <0>;
-        // 移動データ回数リセットまでに要する時間
-        reset-timeout-ms = <1000>;
+
+        threshold = <15>;
+        require-prior-idle-ms = <250>;
+        reset-timeout-ms = <200>;
+
+        // 押してもAMLを解除しないキー位置)（使わない）
+        //excluded-positions = <17 30>;
     };
 
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        // ここのzip_temp_layerを編集
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
-                           <&zip_xy_scaler 1 1>,
-                           <&zip_temp_layer 1 5>; 
-        
+        input-processors =
+            <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
+            <&zip_xy_scaler 1 1>,
+
+            //ここの後ろの数値を調整
+            <&zip_temp_layer_threshold 1 150>;
+
         scroller {
             layers = <6 7>;
-            input-processors = <&zip_xy_to_scroll_mapper>,
-                               <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-                               <&zip_scroll_scaler 1 5>;
+
+            input-processors =
+                <&zip_xy_to_scroll_mapper>,
+                <&zip_scroll_transform
+                    (INPUT_TRANSFORM_X_INVERT |
+                     INPUT_TRANSFORM_Y_INVERT)>,
+                <&zip_scroll_scaler 1 5>;
         };
     };
 };
@@ -71,7 +77,9 @@
     };
 };
 
-&xiao_serial { status = "disabled"; };
+&xiao_serial {
+    status = "disabled";
+};
 
 &spi0 {
     status = "okay";
