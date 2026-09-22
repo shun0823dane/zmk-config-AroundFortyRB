@@ -43,14 +43,18 @@
                        <&zip_temp_layer_threshold 1 2000>;
 
     scroller {
-        layers = <6 7>;
+        scroller {
+            layers = <6 7>;
 
-        input-processors = <&zip_xy_to_scroll_mapper>,
-                           <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT |
-                                                  INPUT_TRANSFORM_Y_INVERT)>,
-                           <&zip_scroll_scaler 1 20>;
-    };
-};
+            input-processors = <&zip_xy_to_scroll_mapper>,
+                               <&zip_scroll_transform (
+                                   INPUT_TRANSFORM_X_INVERT |
+                                   INPUT_TRANSFORM_Y_INVERT
+                               )>,
+                               <&zip_scroll_scaler 1 20>;
+        };  // scroller
+    };      // trackball_listener
+};          // ルート
 
 &pinctrl {
     spi0_default: spi0_default {
