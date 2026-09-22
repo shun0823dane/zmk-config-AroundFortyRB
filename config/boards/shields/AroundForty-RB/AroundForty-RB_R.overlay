@@ -30,8 +30,8 @@
         // 0の場合は即時起動
         threshold = <0>;
 
-        // 押してもAMLを解除しないキー位置
-        excluded-positions = <17 30>;
+        // 押してもAMLを解除しないキー位置)（使わない）
+        //excluded-positions = <17 30>;
 
         // キー操作後、移動量の計測を無視する時間
         require-prior-idle-ms = <0>;
@@ -47,7 +47,7 @@
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
             <&zip_xy_scaler 1 1>,
-            <&zip_temp_layer_threshold 1 2000>;
+            <&zip_temp_layer_threshold 1 800>;
 
         scroller {
             layers = <6 7>;
