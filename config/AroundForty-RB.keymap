@@ -264,7 +264,7 @@
         AutoMouse_Layer {
             bindings = <
 &kp ESCAPE           &kp LG(LC(W))          &kp LG(SPACE)  &kp LG(R)      &kp LG(T)                     &kp LESS_THAN     &kp GREATER_THAN         &LinkCopy              &kp LG(MINUS)          &kp LG(EQUAL)
-&trans               &lt CONTROL LG(LS(S))  &kp DELETE     &kp LG(F)      &kp LS(LG(T))                 &kp LG(A)         &kp LG(V)                &mo SCROLL             &kp RIGHT              &HyphoneAndSpace
+&trans               &lt CONTROL LG(LS(S))  &kp DELETE     &kp LG(F)      &kp LS(LG(T))                 &kp LG(A)         &kp LG(V)                &trans             &kp RIGHT              &HyphoneAndSpace
 &mt LG(LS(Z)) LG(Z)  &kp LG(LA(V))          &kp LA(LG(C))  &kp LS(LG(V))  &kp LC(S)      &kp LG(ENTER)  &trans            &kp LG(C)                &CommaAndSpace         &kp LC(UP)             &mkp MB1
 &trans               &trans                 &trans         &trans         &trans         &trans         &lt NUMBER LANG1  &mt LG(LA(SPACE)) LG(W)  &lt CONTROL LC(ENTER)  &lt SETTINGS LC(LEFT)  &kp LC(RIGHT)
             >;
@@ -273,7 +273,7 @@
         AutoMouse_XiaomiPad_Layer {
             bindings = <
 &kp ESCAPE           &kp LC(W)              &kp C_AC_SEARCH  &kp LC(R)      &kp LC(T)                     &kp LESS_THAN     &kp GREATER_THAN         &LinkCopy_Xiaomi       &kp LC(MINUS)         &kp LC(EQUAL)
-&trans               &lt CONTROL LC(LS(S))  &kp DELETE       &kp LC(F)      &kp LS(LC(T))                 &kp LC(A)         &kp LC(V)                &mo SCROLL             &kp RIGHT             &HyphoneAndSpace
+&trans               &lt CONTROL LC(LS(S))  &kp DELETE       &kp LC(F)      &kp LS(LC(T))                 &kp LC(A)         &kp LC(V)                &trans             &kp RIGHT             &HyphoneAndSpace
 &mt LC(LS(Z)) LC(Z)  &kp LC(LA(V))          &kp LA(LC(C))    &kp LS(LC(V))  &kp LC(S)      &kp LC(ENTER)  &trans            &kp LC(C)                &CommaAndSpace         &kp LG(TAB)           &mkp MB1
 &trans               &trans                 &trans           &trans         &trans         &trans         &lt NUMBER LANG1  &mt LC(LA(SPACE)) LC(W)  &lt CONTROL LC(ENTER)  &lt SETTINGS LA(TAB)  &kp LA(TAB)
             >;
