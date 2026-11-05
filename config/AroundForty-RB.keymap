@@ -254,37 +254,37 @@
 
         Mac-Default_Layer {
             bindings = <
-&mt ESCAPE Q     &kp W                   &kp E         &kp R                   &kp T                                   &kp Y             &kp U                    &kp I              &kp O                   &kp P
-&kp A            &kp S                   &kp D         &kp F                   &kp G                                   &kp H             &kp J                    &lt SCROLL K       &kp L                   &lt CONTROL MINUS
-&mt LG(LS(Z)) Z  &kp X                   &kp C         &kp V                   &kp B          &mt LG(LA(T)) LG(ENTER)  &kp N             &kp M                    &kp COMMA          &kp PERIOD              &mkp MB1
-&mt LCTRL TAB    &mt LEFT_ALT LS(ENTER)  &kp LEFT_GUI  &mt LS(LEFT_WIN) LANG2  &kp BACKSPACE  &mt LEFT_SHIFT SPACE     &lt NUMBER LANG1  &mt LA(LG(SPACE)) SLASH  &lt CONTROL ENTER  &lt SETTINGS BACKSLASH  &lt 1 CAPSLOCK
+&mt ESCAPE Q     &kp W                     &kp E         &kp R                   &kp T                                     &kp Y             &kp U                    &kp I              &kp O                   &kp P
+&kp A            &kp S                     &kp D         &kp F                   &kp G                                     &kp H             &kp J                    &lt SCROLL K       &kp L                   &lt CONTROL MINUS
+&mt LG(LS(Z)) Z  &kp X                     &kp C         &kp V                   &kp B          &mt (LG(LA(T))) LG(ENTER)  &kp N             &kp M                    &kp COMMA          &kp PERIOD              &mkp MB1
+&mt LCTRL TAB    &mt (LEFT_ALT) LS(ENTER)  &kp LEFT_GUI  &mt LS(LEFT_WIN) LANG2  &kp BACKSPACE  &mt LEFT_SHIFT SPACE       &lt NUMBER LANG1  &mt LA(LG(SPACE)) SLASH  &lt CONTROL ENTER  &lt SETTINGS BACKSLASH  &lt 1 CAPSLOCK
             >;
         };
 
         AutoMouse_Layer {
             bindings = <
-&kp ESCAPE           &kp LG(LC(W))          &kp LG(SPACE)  &kp LG(R)      &kp LG(T)                     &kp LESS_THAN     &kp GREATER_THAN         &LinkCopy              &kp LG(MINUS)          &kp LG(EQUAL)
-&trans               &lt CONTROL LG(LS(S))  &kp DELETE     &kp LG(F)      &kp LS(LG(T))                 &kp LG(A)         &kp LG(V)                &trans             &kp RIGHT              &HyphoneAndSpace
-&mt LG(LS(Z)) LG(Z)  &kp LG(LA(V))          &kp LA(LG(C))  &kp LS(LG(V))  &kp LC(S)      &kp LG(ENTER)  &trans            &kp LG(C)                &CommaAndSpace         &kp LC(UP)             &mkp MB1
-&trans               &trans                 &trans         &trans         &trans         &trans         &lt NUMBER LANG1  &mt LG(LA(SPACE)) LG(W)  &lt CONTROL LC(ENTER)  &lt SETTINGS LC(LEFT)  &kp LC(RIGHT)
+&kp ESCAPE             &kp LG(LC(W))            &kp LG(SPACE)  &kp LG(R)      &kp LG(T)                     &kp LESS_THAN     &kp GREATER_THAN           &LinkCopy                &kp LG(MINUS)            &kp LG(EQUAL)
+&trans                 &lt (CONTROL) LG(LS(S))  &kp DELETE     &kp LG(F)      &kp LS(LG(T))                 &kp LG(A)         &kp LG(V)                  &trans                   &kp RIGHT                &HyphoneAndSpace
+&mt (LG(LS(Z))) LG(Z)  &kp LG(LA(V))            &kp LA(LG(C))  &kp LS(LG(V))  &kp LC(S)      &kp LG(ENTER)  &trans            &kp LG(C)                  &CommaAndSpace           &kp LC(UP)               &mkp MB1
+&trans                 &trans                   &trans         &trans         &trans         &trans         &lt NUMBER LANG1  &mt (LG(LA(SPACE))) LG(W)  &lt (CONTROL) LC(ENTER)  &lt (SETTINGS) LC(LEFT)  &kp LC(RIGHT)
             >;
         };
 
         AutoMouse_XiaomiPad_Layer {
             bindings = <
-&kp ESCAPE           &kp LC(W)              &kp C_AC_SEARCH  &kp LC(R)      &kp LC(T)                     &kp LESS_THAN     &kp GREATER_THAN         &LinkCopy_Xiaomi       &kp LC(MINUS)         &kp LC(EQUAL)
-&trans               &lt CONTROL LC(LS(S))  &kp DELETE       &kp LC(F)      &kp LS(LC(T))                 &kp LC(A)         &kp LC(V)                &trans             &kp RIGHT             &HyphoneAndSpace
-&mt LC(LS(Z)) LC(Z)  &kp LC(LA(V))          &kp LA(LC(C))    &kp LS(LC(V))  &kp LC(S)      &kp LC(ENTER)  &trans            &kp LC(C)                &CommaAndSpace         &kp LG(TAB)           &mkp MB1
-&trans               &trans                 &trans           &trans         &trans         &trans         &lt NUMBER LANG1  &mt LC(LA(SPACE)) LC(W)  &lt CONTROL LC(ENTER)  &lt SETTINGS LA(TAB)  &kp LA(TAB)
+&kp ESCAPE             &kp LC(W)                &kp C_AC_SEARCH  &kp LC(R)      &kp LC(T)                     &kp LESS_THAN     &kp GREATER_THAN           &LinkCopy_Xiaomi         &kp LC(MINUS)           &kp LC(EQUAL)
+&trans                 &lt (CONTROL) LC(LS(S))  &kp DELETE       &kp LC(F)      &kp LS(LC(T))                 &kp LC(A)         &kp LC(V)                  &trans                   &kp RIGHT               &HyphoneAndSpace
+&mt (LC(LS(Z))) LC(Z)  &kp LC(LA(V))            &kp LA(LC(C))    &kp LS(LC(V))  &kp LC(S)      &kp LC(ENTER)  &trans            &kp LC(C)                  &CommaAndSpace           &kp LG(TAB)             &mkp MB1
+&trans                 &trans                   &trans           &trans         &trans         &trans         &lt NUMBER LANG1  &mt (LC(LA(SPACE))) LC(W)  &lt (CONTROL) LC(ENTER)  &lt (SETTINGS) LA(TAB)  &kp LA(TAB)
             >;
         };
 
         Number_Layer {
             bindings = <
-&kp LS(STAR)          &kp PLUS              &kp N7           &kp N8   &kp N9                    &kp LS(EXCL)   &symbol_brackets_hanKAKKO  &symbol_brackets_contain  &symbol_brackets_hankaku  &kp BSLH
-&kp LS(COLON)         &kp EQUAL             &kp N4           &kp N5   &kp N6                    &kp LS(QMARK)  &symbol_brackets_ZENKAKKO  &symbol_brackets_KAGI     &return_kak               &kp LS(MINUS)
-&kp FSLH              &kp MINUS             &kp N1           &kp N2   &kp N3         &kp COMMA  &symbol_DQuot  &kp SEMICOLON              &symbol_NAKAGURO          &symbol_colon             &mt LS(PERCENT) HASH
-&mt LEFT_CONTROL TAB  &mt LEFT_ALT LS(TAB)  &mt LEFT_WIN N0  &kp DOT  &kp BACKSPACE  &trans     &symbol_colon  &kp SQT                    &HashAndSpace             &kp LS(AMPERSAND)         &mt LS(ASTRK) DOLLAR
+&kp LS(STAR)          &kp PLUS                &kp N7           &kp N8   &kp N9                    &kp LS(EXCL)   &symbol_brackets_hanKAKKO  &symbol_brackets_contain  &symbol_brackets_hankaku  &kp BSLH
+&kp LS(COLON)         &kp EQUAL               &kp N4           &kp N5   &kp N6                    &kp LS(QMARK)  &symbol_brackets_ZENKAKKO  &symbol_brackets_KAGI     &return_kak               &kp LS(MINUS)
+&kp FSLH              &kp MINUS               &kp N1           &kp N2   &kp N3         &kp COMMA  &symbol_DQuot  &kp SEMICOLON              &symbol_NAKAGURO          &symbol_colon             &mt LS(PERCENT) HASH
+&mt LEFT_CONTROL TAB  &mt (LEFT_ALT) LS(TAB)  &mt LEFT_WIN N0  &kp DOT  &kp BACKSPACE  &trans     &symbol_colon  &kp SQT                    &HashAndSpace             &kp LS(AMPERSAND)         &mt LS(ASTRK) DOLLAR
             >;
         };
 
@@ -312,19 +312,19 @@
 
         Scroll_Layer {
             bindings = <
-&kp LC(LA(E))               &kp LG(LEFT)            &kp LG(LA(N7))          &kp LA(LG(N8))  &kp LA(LG(NUMBER_9))                            &trans         &kp LG(LS(LEFT_BRACKET))   &trans            &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
-&kp LG(UP_ARROW)            &kp LG(N)               &kp LG(LA(N4))          &kp LA(LG(N5))  &kp LG(LA(N6))                                  &CreatNewTab   &kp LG(LS(RIGHT_BRACKET))  &trans            &mkp MB2           &trans
-&kp LC(LA(T))               &kp LG(RIGHT)           &kp LA(LG(NUMBER_1))    &kp LG(LA(N2))  &kp LG(LA(N3))        &kp LS(LC(LG(NUMBER_4)))  &trans         &kp LG(LBKT)               &kp LA(LG(T))     &kp LG(RBKT)       &trans
-&mt LEFT_CONTROL LC(LA(L))  &mt LEFT_ALT LC(LA(M))  &mt LEFT_WIN LA(LC(R))  &trans          &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))      &kp LG(ENTER)  &kp LG(LA(SPACE))          &browser_DupPage  &kp LC(LEFT)       &kp LC(RIGHT)
+&kp LC(LA(E))                 &kp LG(LEFT)              &kp LG(LA(N7))            &kp LA(LG(N8))        &kp LA(LG(NUMBER_9))                            &trans         &kp LG(LS(LEFT_BRACKET))   &trans            &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+&kp LG(UP_ARROW)              &kp LG(N)                 &kp LG(LA(N4))            &kp LA(LG(N5))        &kp LG(LA(N6))                                  &CreatNewTab   &kp LG(LS(RIGHT_BRACKET))  &trans            &mkp MB2           &trans
+&kp LC(LA(T))                 &kp LG(RIGHT)             &kp LA(LG(NUMBER_1))      &kp LG(LA(N2))        &kp LG(LA(N3))        &kp LS(LC(LG(NUMBER_4)))  &trans         &kp LG(LBKT)               &kp LA(LG(T))     &kp LG(RBKT)       &trans
+&mt (LEFT_CONTROL) LC(LA(L))  &mt (LEFT_ALT) LC(LA(M))  &mt (LEFT_WIN) LA(LC(R))  &kp LG(LA(NUMBER_0))  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))      &kp LG(ENTER)  &kp LG(LA(SPACE))          &browser_DupPage  &kp LC(LEFT)       &kp LC(RIGHT)
             >;
         };
 
         Scroll_XiaomiPad_Layer {
             bindings = <
-&kp LG(DOWN)               &kp LG(LEFT)            &kp LC(N7)              &kp LC(N8)  &kp LC(N9)                      &trans               &kp LC(LS(TAB))    &trans                   &kp K_VOLUME_DOWN  &kp K_VOLUME_UP
-&kp LG(UP)                 &kp LG(N)               &kp LC(A)               &kp LC(N5)  &kp LC(N6)                      &CreatNewTab_Xiaomi  &kp LC(TAB)        &trans                   &mkp MB2           &trans
-&kp LG(DOWN)               &kp LG(RIGHT)           &kp LC(N1)              &kp LC(N2)  &kp LC(N3)      &kp LC(LS(N4))  &trans               &kp LA(LEFT)       &kp LA(LC(T))            &kp LA(RIGHT)      &trans
-&mt LEFT_CONTROL LG(DOWN)  &mt LEFT_ALT LC(LA(M))  &mt LEFT_WIN LA(LC(R))  &trans      &kp LC(LS(N3))  &kp LC(LS(N4))  &kp LC(ENTER)        &kp LC(LA(SPACE))  &browser_DupPage_Xiaomi  &kp LC(LEFT)       &trans
+&kp LG(DOWN)                 &kp LG(LEFT)              &kp LC(N7)                &kp LC(N8)  &kp LC(N9)                      &trans               &kp LC(LS(TAB))    &trans                   &kp K_VOLUME_DOWN  &kp K_VOLUME_UP
+&kp LG(UP)                   &kp LG(N)                 &kp LC(A)                 &kp LC(N5)  &kp LC(N6)                      &CreatNewTab_Xiaomi  &kp LC(TAB)        &trans                   &mkp MB2           &trans
+&kp LG(DOWN)                 &kp LG(RIGHT)             &kp LC(N1)                &kp LC(N2)  &kp LC(N3)      &kp LC(LS(N4))  &trans               &kp LA(LEFT)       &kp LA(LC(T))            &kp LA(RIGHT)      &trans
+&mt (LEFT_CONTROL) LG(DOWN)  &mt (LEFT_ALT) LC(LA(M))  &mt (LEFT_WIN) LA(LC(R))  &trans      &kp LC(LS(N3))  &kp LC(LS(N4))  &kp LC(ENTER)        &kp LC(LA(SPACE))  &browser_DupPage_Xiaomi  &kp LC(LEFT)       &trans
             >;
         };
 
